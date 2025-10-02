@@ -1,4 +1,3 @@
-import sqlite3
 from pathlib import Path
 from functools import wraps
 from flask import Flask, g, render_template, request, session, \
