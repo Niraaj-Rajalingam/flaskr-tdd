@@ -62,7 +62,6 @@ def test_login_logout(client):
     rv = login(client, app.config["USERNAME"], app.config["PASSWORD"] + "x")
     assert b"Invalid password" in rv.data
 
-
 def test_messages(client):
     """Ensure that user can post messages"""
     login(client, app.config["USERNAME"], app.config["PASSWORD"])
